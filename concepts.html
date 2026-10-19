@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Evolution of HTTP | Key Concepts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Shared site header. -->
+  <header class="site-header"><div class="container header-inner">
+    <a class="site-name" href="index.html">The Evolution of HTTP</a>
+    <nav aria-label="Main navigation"><ul class="nav-list">
+      <li><a href="index.html">Home</a></li><li><a href="basics.html">HTTP Basics</a></li>
+      <li><a href="evolution.html">Evolution</a></li><li><a class="active" href="concepts.html">Key Concepts</a></li>
+      <li><a href="references.html">References</a></li><li><a href="about.html">About</a></li>
+    </ul></nav>
+  </div></header>
+  <main class="container page-content">
+    <p class="eyebrow">Study guide</p>
+    <h1>Seven Key Concepts</h1>
+    <p class="lead">These terms help explain how HTTP works and why its newer versions were developed.</p>
+    <div class="concept-list">
+      <article class="info-card"><h2>1. Client</h2><p>A program, usually a browser or app, that sends a request to a server.</p></article>
+      <article class="info-card"><h2>2. Server</h2><p>A system or software that receives requests and sends responses.</p></article>
+      <article class="info-card"><h2>3. Header</h2><p>Metadata attached to a request or response, such as content type or caching instructions.</p></article>
+      <article class="info-card"><h2>4. Statelessness</h2><p>HTTP does not automatically remember earlier requests. Web applications can add state using cookies, sessions, authentication, and databases.</p></article>
+      <article class="info-card"><h2>5. TLS and HTTPS</h2><p>HTTPS carries HTTP over a connection protected by TLS, which helps protect data from being read or changed in transit.</p></article>
+      <article class="info-card"><h2>6. Multiplexing</h2><p>Multiplexing allows multiple independent streams to share a connection. HTTP/2 introduced this over one TCP connection.</p></article>
+      <article class="info-card"><h2>7. QUIC</h2><p>QUIC is the transport protocol used by HTTP/3. It supports independent streams and integrates TLS 1.3 into connection setup.</p></article>
+    </div>
+    <section class="content-section">
+      <h2>More to explore</h2>
+      <p>HTTP caching lets a browser or intermediary reuse a stored response instead of requesting the same resource again. APIs also use HTTP to exchange data, often in JSON format.</p>
+      <p>These ideas connect HTTP to website speed, security, and modern applications.</p>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container">
+    <p>IT 3203 class project by Kennedy Cooper Jr. · Fall 2026</p>
+    <p>This is a class project. Visit the <a href="https://ksuweb.github.io/IT3203/">IT 3203 course website</a>.</p>
+  </div></footer>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" role="img" aria-labelledby="title desc">
+  <title id="title">HTTP request and response</title>
+  <desc id="desc">A browser sends an HTTP request to a web server, and the server returns a response.</desc>
+  <rect x="25" y="65" width="210" height="120" rx="12" fill="#ffffff" stroke="#145da0" stroke-width="3"/>
+  <text x="130" y="112" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#153650">Browser</text>
+  <text x="130" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#42566c">Client</text>
+  <rect x="525" y="65" width="210" height="120" rx="12" fill="#ffffff" stroke="#145da0" stroke-width="3"/>
+  <text x="630" y="112" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#153650">Web server</text>
+  <text x="630" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#42566c">Processes request</text>
+  <path d="M245 100 H505" stroke="#2b82b8" stroke-width="4" fill="none"/>
+  <path d="M490 88 L507 100 L490 112" stroke="#2b82b8" stroke-width="4" fill="none"/>
+  <text x="375" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#153650">HTTP request</text>
+  <path d="M515 155 H255" stroke="#4b8a69" stroke-width="4" fill="none"/>
+  <path d="M270 143 L253 155 L270 167" stroke="#4b8a69" stroke-width="4" fill="none"/>
+  <text x="375" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#153650">HTTP response</text>
+  <text x="380" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#153650">Request → Response → Page renders</text>
+</svg>

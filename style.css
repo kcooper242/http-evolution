@@ -1,0 +1,298 @@
+/* One shared stylesheet for all six pages. */
+
+/* Element selector: establishes readable defaults for the whole site. */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.65;
+  color: #243247;
+  background: #f5f7fa;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #145da0;
+  text-decoration: none;
+}
+
+/* Pseudo-class selector: links change appearance when a visitor hovers. */
+a:hover {
+  color: #0b3a68;
+  text-decoration: underline;
+}
+
+.container {
+  width: min(1080px, 92%);
+  margin: 0 auto;
+}
+
+.site-header {
+  background: #12304a;
+  color: #ffffff;
+  border-bottom: 4px solid #2b82b8;
+}
+
+.header-inner {
+  display: flex; /* Flexbox lays out the site title and navigation. */
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.site-name {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: 0.01em;
+}
+
+.site-name:hover {
+  color: #dceefa;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list a {
+  display: block;
+  color: #ffffff;
+  padding: 0.45rem 0.65rem;
+  border-radius: 5px;
+  font-size: 0.92rem;
+}
+
+.nav-list a:hover,
+.nav-list a.active {
+  background: #285474;
+  text-decoration: none;
+}
+
+.hero {
+  padding: 4rem 0 3rem;
+  max-width: 800px;
+}
+
+.eyebrow {
+  margin: 0 0 0.5rem;
+  color: #286c98;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+h1, h2, h3 {
+  line-height: 1.25;
+  color: #153650;
+}
+
+h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(2.1rem, 5vw, 3.4rem);
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 1.65rem;
+}
+
+h3 {
+  font-size: 1.15rem;
+}
+
+.lead {
+  color: #42566c;
+  font-size: 1.2rem;
+  max-width: 760px;
+}
+
+.button-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.7rem 1rem;
+  color: #ffffff;
+  background: #145da0;
+  border: 1px solid #145da0;
+  border-radius: 6px;
+  font-weight: 700;
+}
+
+.button-link:hover {
+  color: #ffffff;
+  background: #0b3a68;
+  text-decoration: none;
+}
+
+.content-section {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: #ffffff;
+  border: 1px solid #dce3eb;
+  border-radius: 10px;
+}
+
+.card-grid {
+  display: grid; /* CSS Grid creates even columns for the home-page cards. */
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.info-card {
+  padding: 1.2rem;
+  background: #ffffff;
+  border: 1px solid #dce3eb;
+  border-radius: 8px;
+}
+
+.info-card h2,
+.info-card h3 {
+  margin-top: 0;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.diagram {
+  margin: 0;
+  padding: 1rem;
+  background: #eef4f8;
+  border: 1px solid #dce3eb;
+  border-radius: 8px;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  color: #536579;
+  font-size: 0.9rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  background: #ffffff;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid #d5dee8;
+}
+
+th {
+  background: #eaf1f6;
+  color: #153650;
+}
+
+tbody tr:nth-child(even) {
+  background: #f7f9fb;
+}
+
+.page-content {
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
+}
+
+.timeline {
+  border-left: 4px solid #2b82b8;
+}
+
+.timeline article {
+  margin: 0 0 1.5rem;
+  padding-left: 1rem;
+  border-bottom: 1px solid #e0e6ed;
+}
+
+.timeline article:last-child {
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+.timeline h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.4rem;
+}
+
+.concept-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.reference-list li {
+  margin-bottom: 0.7rem;
+  overflow-wrap: anywhere;
+}
+
+.note {
+  border-left: 4px solid #2b82b8;
+}
+
+.site-footer {
+  margin-top: 3rem;
+  padding: 1.5rem 0;
+  color: #e9f0f6;
+  background: #12304a;
+  font-size: 0.92rem;
+}
+
+.site-footer p {
+  margin: 0.25rem 0;
+}
+
+.site-footer a {
+  color: #b9e0ff;
+  text-decoration: underline;
+}
+
+/* Class selector: reusable note style and other named sections are above. */
+
+/* Smaller screens: navigation and content columns wrap instead of overflowing. */
+@media (max-width: 760px) {
+  .header-inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .card-grid,
+  .two-column,
+  .concept-list {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding-top: 2.5rem;
+  }
+
+  .content-section {
+    padding: 1rem;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+
+  th, td {
+    padding: 0.5rem;
+  }
+}

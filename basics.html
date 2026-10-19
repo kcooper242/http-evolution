@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Evolution of HTTP | HTTP Basics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Keep the same navigation on every page. -->
+  <header class="site-header"><div class="container header-inner">
+    <a class="site-name" href="index.html">The Evolution of HTTP</a>
+    <nav aria-label="Main navigation"><ul class="nav-list">
+      <li><a href="index.html">Home</a></li><li><a class="active" href="basics.html">HTTP Basics</a></li>
+      <li><a href="evolution.html">Evolution</a></li><li><a href="concepts.html">Key Concepts</a></li>
+      <li><a href="references.html">References</a></li><li><a href="about.html">About</a></li>
+    </ul></nav>
+  </div></header>
+  <main class="container page-content">
+    <p class="eyebrow">Section 1</p>
+    <h1>HTTP Basics</h1>
+    <p class="lead">HTTP gives browsers and servers a shared way to exchange web resources and information.</p>
+
+    <section class="content-section">
+      <h2>What problem does HTTP solve?</h2>
+      <p>Before a browser can display a web page, it needs a standard way to ask a server for files or data. HTTP defines the structure of requests and responses, including methods, headers, status codes, and sometimes a message body.</p>
+      <p>For example, a browser may request <code>/index.html</code>. The server can respond with the HTML document and information about the content type.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>The request–response cycle</h2>
+      <ol>
+        <li>A user enters a URL or clicks a link.</li>
+        <li>The browser finds the server and establishes a suitable connection.</li>
+        <li>The browser sends an HTTP request.</li>
+        <li>The server processes the request and sends an HTTP response.</li>
+        <li>The browser uses the response to display the page and may request more resources, such as CSS, JavaScript, and images.</li>
+      </ol>
+    </section>
+
+    <section class="content-section">
+      <h2>Common HTTP methods</h2>
+      <table>
+        <thead><tr><th>Method</th><th>Common purpose</th></tr></thead>
+        <tbody>
+          <tr><td>GET</td><td>Retrieve a resource.</td></tr>
+          <tr><td>POST</td><td>Send data to a resource, often to create or process something.</td></tr>
+          <tr><td>PUT</td><td>Replace a resource with the supplied representation.</td></tr>
+          <tr><td>PATCH</td><td>Make a partial change to a resource.</td></tr>
+          <tr><td>DELETE</td><td>Ask the server to delete a resource.</td></tr>
+          <tr><td>HEAD</td><td>Request headers similar to GET, without the response body.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="content-section">
+      <h2>Common response status codes</h2>
+      <ul>
+        <li><strong>200 OK:</strong> the request succeeded.</li>
+        <li><strong>301 or 302:</strong> the resource is redirected.</li>
+        <li><strong>400 Bad Request:</strong> the request could not be processed as sent.</li>
+        <li><strong>401 Unauthorized / 403 Forbidden:</strong> authentication or permission is missing or denied.</li>
+        <li><strong>404 Not Found:</strong> the requested resource could not be found.</li>
+        <li><strong>500 Internal Server Error:</strong> the server encountered an unexpected problem.</li>
+      </ul>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container">
+    <p>IT 3203 class project by Kennedy Cooper Jr. · Fall 2026</p>
+    <p>This is a class project. Visit the <a href="https://ksuweb.github.io/IT3203/">IT 3203 course website</a>.</p>
+  </div></footer>
+</body>
+</html>

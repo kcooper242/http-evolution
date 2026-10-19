@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Evolution of HTTP | Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Shared header and navigation keep the site consistent across pages. -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-name" href="index.html">The Evolution of HTTP</a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="basics.html">HTTP Basics</a></li>
+          <li><a href="evolution.html">Evolution</a></li>
+          <li><a href="concepts.html">Key Concepts</a></li>
+          <li><a href="references.html">References</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">IT 3203 · Web Development Project</p>
+      <h1>The Evolution of HTTP</h1>
+      <p class="lead">How the Web’s main communication protocol developed from simple text pages to HTTP/3.</p>
+      <p>HTTP stands for HyperText Transfer Protocol. It defines how browsers, apps, and servers exchange requests and responses. This website explains what HTTP does and how its versions have changed to support the modern Web.</p>
+      <a class="button-link" href="basics.html">Start learning</a>
+    </section>
+
+    <section class="content-section">
+      <h2>What you will learn</h2>
+      <div class="card-grid">
+        <article class="info-card">
+          <h3>HTTP basics</h3>
+          <p>Learn about requests, responses, methods, status codes, and where HTTP fits in the web stack.</p>
+          <a href="basics.html">Read HTTP Basics</a>
+        </article>
+        <article class="info-card">
+          <h3>Protocol evolution</h3>
+          <p>Compare HTTP/0.9, HTTP/1.0, HTTP/1.1, HTTP/2, and HTTP/3.</p>
+          <a href="evolution.html">Explore the versions</a>
+        </article>
+        <article class="info-card">
+          <h3>Key concepts</h3>
+          <p>Review important ideas such as caching, TLS, QUIC, and multiplexing.</p>
+          <a href="concepts.html">Study key concepts</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section two-column">
+      <div>
+        <h2>HTTP at a glance</h2>
+        <p>The basic pattern has remained consistent: a client sends a request, and a server sends a response. Newer versions mainly improve how messages travel across the network.</p>
+        <ul>
+          <li>HTTP is an application-layer protocol.</li>
+          <li>HTTPS uses HTTP over a connection protected by TLS.</li>
+          <li>HTTP/2 introduced multiplexing over a single TCP connection.</li>
+          <li>HTTP/3 uses QUIC as its transport protocol.</li>
+        </ul>
+      </div>
+      <figure class="diagram">
+        <img src="http-flow.svg" alt="Diagram showing a browser sending an HTTP request to a web server and receiving a response">
+        <figcaption>A simplified HTTP request-and-response cycle.</figcaption>
+      </figure>
+    </section>
+
+    <section class="content-section">
+      <h2>Table of contents</h2>
+      <table>
+        <thead><tr><th>Page</th><th>Topic</th><th>What it covers</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td><a href="index.html">Home</a></td><td>Overview and page directory</td></tr>
+          <tr><td>2</td><td><a href="basics.html">HTTP Basics</a></td><td>Requests, responses, methods, and status codes</td></tr>
+          <tr><td>3</td><td><a href="evolution.html">Evolution</a></td><td>How HTTP versions changed over time</td></tr>
+          <tr><td>4</td><td><a href="concepts.html">Key Concepts</a></td><td>Seven important terms and ideas</td></tr>
+          <tr><td>5</td><td><a href="references.html">References</a></td><td>Research sources and learning resources</td></tr>
+          <tr><td>6</td><td><a href="about.html">About</a></td><td>Student and project information</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- The footer identifies this as a class project, as required by the guide. -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>IT 3203 class project by Kennedy Cooper Jr. · Fall 2026</p>
+      <p>This is a class project. Visit the <a href="https://ksuweb.github.io/IT3203/">IT 3203 course website</a>.</p>
+    </div>
+  </footer>
+</body>
+</html>

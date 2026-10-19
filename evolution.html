@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Evolution of HTTP | Evolution</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Shared site header. -->
+  <header class="site-header"><div class="container header-inner">
+    <a class="site-name" href="index.html">The Evolution of HTTP</a>
+    <nav aria-label="Main navigation"><ul class="nav-list">
+      <li><a href="index.html">Home</a></li><li><a href="basics.html">HTTP Basics</a></li>
+      <li><a class="active" href="evolution.html">Evolution</a></li><li><a href="concepts.html">Key Concepts</a></li>
+      <li><a href="references.html">References</a></li><li><a href="about.html">About</a></li>
+    </ul></nav>
+  </div></header>
+  <main class="container page-content">
+    <p class="eyebrow">Section 2</p>
+    <h1>How HTTP Evolved</h1>
+    <p class="lead">As websites became more complex, HTTP gained new features and more efficient ways to transport messages.</p>
+
+    <section class="content-section timeline">
+      <article><h2>HTTP/0.9</h2><p>The earliest version was extremely simple. A request was basically a GET line, and the response was the requested HTML. It did not have headers, status codes, or support for different content types.</p></article>
+      <article><h2>HTTP/1.0</h2><p>This version added protocol version information, status codes, and headers. Content-Type made it possible to transfer resources beyond HTML, including images and other media.</p></article>
+      <article><h2>HTTP/1.1</h2><p>HTTP/1.1 improved connection reuse and added important features such as the Host header. It remained important for compatibility, but did not include the same multiplexing approach used by later versions.</p></article>
+      <article><h2>HTTP/2</h2><p>HTTP/2 introduced binary framing, multiplexing multiple streams over one TCP connection, and header compression. These changes aimed to reduce delay and use network resources more efficiently.</p></article>
+      <article><h2>HTTP/3</h2><p>HTTP/3 uses QUIC instead of TCP as its transport. QUIC supports multiple streams and incorporates TLS 1.3 into its connection design. It is designed to improve performance, particularly when network conditions change or packets are lost.</p></article>
+    </section>
+
+    <section class="content-section">
+      <h2>Version comparison</h2>
+      <table>
+        <thead><tr><th>Version</th><th>Major change</th><th>Why it mattered</th></tr></thead>
+        <tbody>
+          <tr><td>HTTP/0.9</td><td>Simple GET request and HTML response</td><td>Supported the early, small Web.</td></tr>
+          <tr><td>HTTP/1.0</td><td>Headers and status codes</td><td>Allowed richer responses and clearer error handling.</td></tr>
+          <tr><td>HTTP/1.1</td><td>Connection reuse and Host header</td><td>Improved practical web communication and compatibility.</td></tr>
+          <tr><td>HTTP/2</td><td>Binary framing and multiplexing</td><td>Allowed multiple streams to share one TCP connection.</td></tr>
+          <tr><td>HTTP/3</td><td>QUIC transport</td><td>Reduces transport-level blocking between independent streams.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="content-section">
+      <h2>Why the changes matter</h2>
+      <p>Modern pages may require many resources. HTTP/2 and HTTP/3 help carry multiple exchanges more efficiently. HTTP/3's QUIC transport can prevent packet loss affecting one stream from automatically blocking progress on every other stream.</p>
+      <p>The core request-and-response model remains, even though the way messages travel has changed.</p>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container">
+    <p>IT 3203 class project by Kennedy Cooper Jr. · Fall 2026</p>
+    <p>This is a class project. Visit the <a href="https://ksuweb.github.io/IT3203/">IT 3203 course website</a>.</p>
+  </div></footer>
+</body>
+</html>
