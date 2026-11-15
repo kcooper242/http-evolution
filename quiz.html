@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTTP Knowledge Quiz | The Evolution of HTTP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Main website navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-name" href="index.html">The Evolution of HTTP</a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="basics.html">HTTP Basics</a></li>
+          <li><a href="evolution.html">Evolution</a></li>
+          <li><a href="concepts.html">Key Concepts</a></li>
+          <li><a href="references.html">References</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a class="active" href="quiz.html">Quiz</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="content-section">
+      <h1>HTTP Knowledge Quiz</h1>
+      <p>Test what you learned about HTTP and its evolution.</p>
+      <p>There are 10 questions worth 10 points each.
+         You have 10 minutes to complete the quiz.
+         A score of 70% or higher is passing.</p>
+
+      <div class="quiz-timer" aria-live="off">
+        Time Remaining: <strong id="timer">10:00</strong>
+      </div>
+
+      <!-- Results appear here after submission -->
+      <section id="results" aria-live="polite" hidden></section>
+
+      <form id="quizForm">
+
+        <!-- Question 1: Fill in the blank -->
+        <fieldset>
+          <legend>1. What does HTTP stand for?</legend>
+          <input type="text" name="q1"
+                 placeholder="Enter your answer">
+        </fieldset>
+
+        <!-- Question 2: Multiple choice -->
+        <fieldset>
+          <legend>2. Which HTTP method retrieves a resource?</legend>
+          <label><input type="radio" name="q2" value="POST"> POST</label>
+          <label><input type="radio" name="q2" value="GET"> GET</label>
+          <label><input type="radio" name="q2" value="DELETE"> DELETE</label>
+          <label><input type="radio" name="q2" value="PATCH"> PATCH</label>
+        </fieldset>
+
+        <!-- Question 3: Multiple choice -->
+        <fieldset>
+          <legend>3. What does HTTP status code 404 mean?</legend>
+          <label><input type="radio" name="q3" value="Success"> Success</label>
+          <label><input type="radio" name="q3" value="Not Found"> Not Found</label>
+          <label><input type="radio" name="q3" value="Redirect"> Redirect</label>
+          <label><input type="radio" name="q3" value="Server Error"> Server Error</label>
+        </fieldset>
+
+        <!-- Question 4: Fill in the blank -->
+        <fieldset>
+          <legend>4. Which HTTP version introduced multiplexing over TCP?</legend>
+          <input type="text" name="q4"
+                 placeholder="Example: HTTP/1.1">
+        </fieldset>
+
+        <!-- Question 5: Multiple choice -->
+        <fieldset>
+          <legend>5. Which transport protocol does HTTP/3 use?</legend>
+          <label><input type="radio" name="q5" value="TCP"> TCP</label>
+          <label><input type="radio" name="q5" value="FTP"> FTP</label>
+          <label><input type="radio" name="q5" value="QUIC"> QUIC</label>
+          <label><input type="radio" name="q5" value="SMTP"> SMTP</label>
+        </fieldset>
+
+        <!-- Question 6: Multiple selection -->
+        <fieldset>
+          <legend>6. Which features were introduced with HTTP/2? Select all that apply.</legend>
+          <label><input type="checkbox" name="q6" value="Multiplexing"> Multiplexing</label>
+          <label><input type="checkbox" name="q6" value="Header Compression"> Header compression</label>
+          <label><input type="checkbox" name="q6" value="QUIC"> QUIC transport</label>
+          <label><input type="checkbox" name="q6" value="Binary Framing"> Binary framing</label>
+        </fieldset>
+
+        <!-- Question 7: Fill in the blank -->
+        <fieldset>
+          <legend>7. What security protocol protects HTTPS connections?</legend>
+          <input type="text" name="q7"
+                 placeholder="Enter the abbreviation">
+        </fieldset>
+
+        <!-- Question 8: Multiple choice -->
+        <fieldset>
+          <legend>8. Which HTTP version introduced headers and status codes?</legend>
+          <label><input type="radio" name="q8" value="HTTP/0.9"> HTTP/0.9</label>
+          <label><input type="radio" name="q8" value="HTTP/1.0"> HTTP/1.0</label>
+          <label><input type="radio" name="q8" value="HTTP/2"> HTTP/2</label>
+          <label><input type="radio" name="q8" value="HTTP/3"> HTTP/3</label>
+        </fieldset>
+
+        <!-- Question 9: Multiple selection -->
+        <fieldset>
+          <legend>9. Which are valid HTTP request methods? Select all that apply.</legend>
+          <label><input type="checkbox" name="q9" value="GET"> GET</label>
+          <label><input type="checkbox" name="q9" value="POST"> POST</label>
+          <label><input type="checkbox" name="q9" value="SEND"> SEND</label>
+          <label><input type="checkbox" name="q9" value="DELETE"> DELETE</label>
+        </fieldset>
+
+        <!-- Question 10: Multiple choice -->
+        <fieldset>
+          <legend>10. What is the main purpose of HTTP caching?</legend>
+          <label><input type="radio" name="q10" value="Encrypt"> Encrypt passwords</label>
+          <label><input type="radio" name="q10" value="Reuse"> Reuse stored responses</label>
+          <label><input type="radio" name="q10" value="Delete"> Delete web pages</label>
+          <label><input type="radio" name="q10" value="Connect"> Connect to Wi-Fi</label>
+        </fieldset>
+
+        <div class="quiz-actions">
+          <button type="submit" id="submitQuiz">Submit Quiz</button>
+          <button type="button" id="resetQuiz">Retake Quiz</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- JavaScript handles timer, grading and reset -->
+  <script src="quiz.js"></script>
+</body>
+</html>
